@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!--
+_________________
+< Geoff was here! >
+ -----------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||-->
+
+<!-- portal revision 200310: removed all pjs code aside from some link rels. Created new header and footer. Changed buttons to green. Created new theme. -->
+<!-- 200514 added menubar css and script mostly copied from gatheragain page.  Added more colors for theme -->
+<!-- Testing GitHub -->
+<html>
+<head>
+<title>Fellowship Staff Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="http://www.fellowshiponline.com/staffportal_files/w3cssbackup.css">
+<link rel="apple-touch-icon" sizes="180x180" href="http://www.fellowshiponline.com/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://www.fellowshiponline.com/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://www.fellowshiponline.com/favicons/favicon-16x16.png">
+<link rel="manifest" href="http://www.fellowshiponline.com/favicons/manifest.json">
+<link rel="mask-icon" href="http://www.fellowshiponline.com/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://www.fellowshiponline.com/favicon.ico">
+<style>
+body, html {
+    height: 100%;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.gnavbar {
+  overflow: hidden;
+  background-color: #3ecde5;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 9; /* Navbar appears on top of everythign else */
+
+}
+.gnavbar a {
+  /* float: right; */
+  color: #fff;
+  text-align: center;
+  /* padding: 12px 14px; */
+  text-decoration: none;
+
+}
+
+/* Change background on mouse-over */
+.gnavbar a:hover {
+  background: #6cc54a; /*FBC Green*/
+  color: #fff;
+}
+
+.gnavbar img {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  /* float: left; */
+  padding-left: 12px;
+  padding-right: 14px;
+
+}
+
+.gnavbar img:hover {
+  background: #6cc54a; /*FBC Green*/
+}
+
+
+/* The hero image */
+.hero-image {
+
+  background-image: url("http://www.fellowshiponline.com/staffportal_files/online-header-darker.png");
+
+  /* Set a specific height */
+  height: 18%;
+
+  /* Position and center the image to scale nicely on all screens */
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 50px;
+}
+
+
+/* Main content */
+
+
+.w3-theme-light {color:#000 !important; background-color:#eaf6ff !important}
+.w3-theme-dark {color:#fff !important; background-color:#002d4d !important}
+.w3-theme-action {color:#fff !important; background-color:#002d4d !important}
+
+.w3-theme-blue {color:#fff !important; background-color:#005b9a !important}
+.w3-text-theme {color:#005b9a !important}
+.w3-border-theme {border-color:#005b9a !important}
+
+.g-theme-lightblue {color:#fff !important; background-color:#3ecde5 !important}
+.g-theme-green {color:#fff !important; background-color:##6cc54a !important}
+.g-green,.g-hover-green:hover{color:#fff!important;background-color:#6cc54a!important}
+
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* list style */
+
+.ul.a {
+  list-style-type: circle;
+}
+
+.greeting-top {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.greeting-top p {
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 801px) {
+  .greeting-top h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .gnavbar a {
+    padding: 10px, 12px;
+    font-size: 15px
+  }
+  .greeting-top h2 {
+    font-size: 40px;
+  }
+  .greeting-top li {
+    font-size: 20px;
+  }
+}
+}
+
+@media screen and (min-width: 800px) {
+  .greeting-top h3 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .greeting-top h2 {
+    font-size: 80px;
+  }
+  .greeting-top li {
+    font-size: 20px;
+  }
+
+}
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<div class="gnavbar">
+   <a href="http://www.fellowshiponline.com"><img src="http://www.fellowshiponline.com/staffportal_files/FBCLogoWhite.png" style="float:left"></a>
+   <!-- <a href="http://www.fellowshiponline.com" style="float:right">Home</a> -->
+   <a href="http://www.fellowshiponline.com/about" style="float:right; padding:14px 14px">About</a>
+   <a href="http://www.fellowshiponline.com/give" style="float:right; padding:14px 14px">Give</a>
+
+
+</div>
+
+<!-- Header Text -->
+
+<div class="hero-image">
+	<div class="hero-text">
+		<h1 style="font-size:6vw">Staff Portal</h1>
+	</div>
+</div>
+<div id=content>
+  <div class="w3-container">
+
+  		<div class="w3-container w3-padding-32 w3-theme-d1">
+
+  		</div>
+
+  		<div class ="w3-row-padding w3-theme">
+
+  <!-- Office 365 -->
+
+  		<div class="w3-third w3-section w3-animate-left">
+  		<div class="w3-card w3-hover-shadow">
+  			<a href="https://portal.office.com"><img src="http://www.fellowshiponline.com/wp-content/uploads/2018/09/Office-365.png" style="width:100%"></a>
+  			<div class="w3-container w3-white w3-center">
+
+  			<!-- <h4>Office 365</h4>
+  			<p>This links to our Office 365 portal containing <a href="https://outlook.office.com/owa/?realm=fellowshiponline.com">Webmail</a> and <a href="https://fbc1401-my.sharepoint.com/_layouts/15/MySite.aspx?MySiteRedirect=AllDocuments">OneDrive.</b></a></p> -->
+  				<a href="https://outlook.office.com/owa/?realm=fellowshiponline.com" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>Webmail</b></a>
+  				<a href="https://fbc1401-my.sharepoint.com/_layouts/15/MySite.aspx?MySiteRedirect=AllDocuments" class="w3-button w3-light-green w3-mobile w3-text-white"><b>OneDrive</b></a>
+  				<p></p>
+  				<a href="https://teams.microsoft.com/_" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Teams</b></a>
+  				<a href="https://fbc1401.sharepoint.com/_layouts/15/sharepoint.aspx" class="w3-button w3-light-green w3-mobile w3-text-white"><b>SharePoint</b></a>
+  				<p></p>
+  			</div>
+  			</div>
+  			</div>
+
+
+  <!-- Support Requests -->
+
+  		<div class="w3-third w3-section w3-animate-top">
+  		<div class="w3-card w3-hover-shadow">
+  			<a href="http://fellowshipbiblechurch.kayako.com"><img src="http://www.fellowshiponline.com/wp-content/uploads/2018/09/supportrequests.png" style="width:100%"></a>
+  			<div class="w3-container w3-white w3-center">
+
+  			<br>
+  			<br>
+  			<!-- <h4>Support Requests</h4>
+  			<p>Click below for help with I.T. or Facilities issues</p> -->
+  				<a href="http://fellowshipbiblechurch.kayako.com/" class="w3-button w3-light-green w3-mobile w3-text-white"><b>I.T. Support</b></a>
+  				<a href="https://app.espace.cool/Account/LogIn?ReturnUrl=%2f" class="w3-button w3-light-green w3-mobile w3-text-white"><b>ESpace</b></a>
+  				<p></p>
+  			</div>
+  			</div>
+  			</div>
+
+  <!-- Ministry Platform -->
+
+  		<div class="w3-third w3-section w3-animate-right">
+  		<div class="w3-card w3-hover-shadow">
+  			<a href="https:my.fellowshiponline.com/ministryplatform"><img src="http://www.fellowshiponline.com/wp-content/uploads/2018/09/mpimage.png" style="width:100%"></a>
+  			<div class="w3-container w3-white w3-center">
+  			<!-- <h4>MinistryPlatform</h4>
+  			<p>This links to <a href="https://my.fellowshiponline.com/ministryplatform">MinistryPlatform</b></a> or click <a href="https://my.fellowshiponline.com/mobiletools">here for MobileTools</b></a></p> -->
+  					<a href="https://my.fellowshiponline.com/ministryplatform" class="w3-button w3-light-green w3-mobile w3-text-white"><b>MinistryPlatform</b></a>
+  					<a href="https://my.fellowshiponline.com/mobiletools" class="w3-button w3-light-green w3-mobile w3-text-white"><b>MobileTools</b></a>
+  					<p></p>
+  					<a href="https://my.fellowshiponline.com/portal" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Portal</b></a>
+  					<a href="http://www.thinkministry.com/kb" class="w3-button w3-light-green w3-mobile w3-text-white"><b>KnowledgeBase</b></a>
+  					<a href="https://my.fellowshiponline.com/reports" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Metrics</b></a>
+  				<p></p>
+  			</div>
+  			</div>
+  			</div>
+
+  <!-- Communication Request Forms -->
+
+  		<div class="w3-third w3-section">
+  		<div class="w3-card w3-hover-shadow w3-animate-left">
+  			<img src="http://www.fellowshiponline.com/wp-content/uploads/2018/09/crf.png" style="width:100%">
+  			<div class="w3-container w3-white w3-center">
+
+  			<!-- <p>Click below to file a CRF</p> -->
+  				<a href="https://fellowshipbiblechurch-ftaff.formstack.com/forms/crf" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Media</b></a>
+  				<a href="https://fellowshipbiblechurch-ftaff.formstack.com/forms/crf_revised_crf" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Revised Media</b></a>
+  				<p></p>
+  				<a href="https://fellowshipbiblechurch-ftaff.formstack.com/forms/website_request_form" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Web</b></a>
+  				<a href="https://fellowshipbiblechurch-ftaff.formstack.com/forms/socialmedia" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Social</b></a>
+  				<a href="https://fellowshipbiblechurch-ftaff.formstack.com/forms/video_project_request_form" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Video</b></a>
+  				<p></p>
+  				<a href="https://fellowshipbiblechurch-ftaff.formstack.com/forms/creative_project" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Creative Project Request</b></a>
+  				<p></p>
+  			</div>
+  			</div>
+  			</div>
+
+  <!-- Human Resources Information -->
+
+  		<div class="w3-third w3-section">
+  		<div class="w3-card w3-hover-shadow w3-animate-bottom">
+  			<img src="http://www.fellowshiponline.com/wp-content/uploads/2018/09/hri.png" style="width:100%">
+  			<div class="w3-container w3-white w3-center">
+
+  				<a href="https://fbclr.blob.core.windows.net/webdocs/Employee%20Handbook%202019.pdf" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Employee Handbook</b></a>
+
+  				<p></p>
+  				<a href="https://myblueprint.healthadvantage-hmo.com/login/login.aspx?e=1" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>MyBlueprint</b></a>
+  				<a href="https://new.readypayonline.com/proliant/Login/login.aspx" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Proliant</b></a>
+  				<p></p>
+  				<a href="https://fbclr.blob.core.windows.net/webdocs/staffdirectory.pdf" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Staff Directory</b></a>
+  				<a href="https://fbclr.blob.core.windows.net/webdocs/200310-OutsideActivity.pdf" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Outside Activity Form</b></a>
+          <p></p>
+          <a href="https://fbclr.blob.core.windows.net/webdocs/FFCRA_Poster_WH1422_Non-Federal.pdf" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Coronavirus Sick Leave</b></a>
+
+  				<p></p>
+  			</div>
+  			</div>
+  			</div>
+
+  <!-- Other Helpful Information -->
+
+  			<div class="w3-third w3-section">
+  			<div class="w3-card w3-hover-shadow w3-animate-right">
+  				<img src="http://www.fellowshiponline.com/wp-content/uploads/2018/09/ohi.png" style="width:100%">
+  				<div class="w3-container w3-white w3-center">
+
+
+  					<a href="https://fbclr.blob.core.windows.net/webdocs/Confession%20of%20Faith%202014%20-%20Updated%20Format.pdf" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Confession of Faith</b></a>
+  					<a href="https://fbc1401.sharepoint.com/SitePages/EFax-Instructions.aspx" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>EFax Instructions</b></a>
+  					<p></p>
+  					<a href="https://fbclr.blob.core.windows.net/webdocs/190627Pastoral%20Care%20Handbook.pdf" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Pastoral Care Handbook</b></a>
+  					<p></p>
+  					<a href="https://system.nexonia.com/assistant/showSignin" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Nexonia</b></a>
+  					<a href="https://www.intacct.com/ia/acct/login.phtml" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Intacct</b></a>
+  					<a href="https://db3.martussolutions.com/Login" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Martus</b></a>
+  					<p></p>
+  					<a href="https://fbclr.blob.core.windows.net/webdocs/Fellowship%20Brand%20Guidelines.pdf" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Brand Guidelines</b></a>
+  					<a href="https://www.canva.com/design/DADQA_h0lNE/EmDnt6l-N1RgM8DIyH6QwA/view?presentation" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Email Guidelines</b></a>
+  					<p></p>
+  					<a href="https://fbclr.blob.core.windows.net/webdocs/Intake%20Form.pdf" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Counseling Intake</b></a>
+
+  					<p></p>
+  				</div>
+  				</div>
+  				<mpp-group-finder targeturl="./Groups/"></mpp-group-finder>
+  				</div>
+  <br><br><br>
+  </div>
+  </div>
+  </div>
+</div>
+
+<!-- Footer at bottom -->
+
+<footer class="w3-center w3-padding-16 w3-theme-blue">
+  <p> <a href="https://www.biblegateway.com/passage/?search=1+Corinthians+15&version=ESV" class="w3-hover-text-white">1 Corinthians 15</a></p>
+</footer>
+
+<!-- Google Analytics tracking script -->
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-9034374-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<!-- Sticky Navbar Script -->
+
+<script>
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("gnavbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
