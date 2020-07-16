@@ -1,7 +1,7 @@
 # StaffPortal
 Convenient location for staff information
 
-The initial idea for this was stolen from https://mp.olivebaptist.org/portal/staff.  It wsa some HTML in a Ministry Platform portal page.
+The initial idea for this was stolen from https://mp.olivebaptist.org/portal/staff.  It was some HTML in a Ministry Platform portal page.
 
 This became an extremely popular tool for our staff.  We eventually found the MP container limiting and broke it out into a separate HTML file.
 
