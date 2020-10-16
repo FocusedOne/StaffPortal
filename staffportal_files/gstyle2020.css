@@ -17,16 +17,17 @@ body, html {
 
 .gnavbar {
   overflow: hidden;
-  background-color: #000000;
+  background-color: #f0f0f0;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 9; /* Navbar appears on top of everythign else */
+  box-shadow: 2px 2px 5px black;
 
 }
 .gnavbar a {
   /* float: right; */
-  color: #fff;
+  color: #000000;
   text-align: center;
   /* padding: 12px 14px; */
   text-decoration: none;
@@ -56,10 +57,10 @@ body, html {
 
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(#999999, #cccccc)
+  background-image: #cccccc
 
   /* Set a specific height */
-  height: 50px;
+  height: 200px;
 
   /* Position and center the image to scale nicely on all screens */
 	background-attachment: fixed;
@@ -114,6 +115,7 @@ body, html {
 Page content */
 .content {
   padding: 16px;
+  background-image: linear-gradient(#999999, #cccccc);
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
