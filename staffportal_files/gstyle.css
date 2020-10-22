@@ -12,7 +12,7 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: grey;
 }
 
 .gnavbar {
@@ -57,7 +57,7 @@ body, html {
 /* The hero image */
 .hero-image {
 
-  background-image: url("http://www.fellowshiponline.com/staffportal_files/online-header-darker.png");
+  background-image: url("https://www.fellowshipar.com/staffportal_files/online-header-darker.png");
 
   /* Set a specific height */
   height: 18%;
