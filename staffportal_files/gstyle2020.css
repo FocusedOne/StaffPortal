@@ -57,10 +57,10 @@ body, html {
 
 /* The hero image */
 .hero-image {
-  background-image: #cccccc
+  background-image: https://www.fellowshipar.com/staffportal_files/online-header-darker.png
 
   /* Set a specific height */
-  height: 200px;
+  height: 400px;
 
   /* Position and center the image to scale nicely on all screens */
 	background-attachment: fixed;
